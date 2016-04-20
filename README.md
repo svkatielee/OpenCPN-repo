@@ -4,17 +4,17 @@ the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 The selected OS is **armbian**, Linux for ARM development boards, from (http://www.armbian.com).
 
 Revisions:
-*Armbian_5.05_Orangepih3_Debian_jessie_3.4.110_desktop
-*OpenCPN 4.2.0.1 (VERSION_DATE "2016-02-03")
-*Orange PI PC  (purchased Feb, 2016)
+ * Armbian_5.05_Orangepih3_Debian_jessie_3.4.110_desktop
+ * OpenCPN 4.2.0.1 (VERSION_DATE "2016-02-03")
+ * Orange PI PC  (purchased Feb, 2016)
 
 For compiling OpenCPN see: [OpenCPN on Orange Pi Allwinner H3 ARM](http://kb7kmo.blogspot.com/2016/04/opencpn-on-orange-pi-allwinner-h3-arm.html)
 
 These instructions start with a blank micro SD card.
 Performance of these cards varies a lot just copping the image on to it.
-*Samsung 32GB EVO - 19MB/s
-*Samsung 8GB PRO  - 4MB/s
-*Transend 8GB 400x HC-i 42.2MB/s
+ * Samsung 32GB EVO - 19MB/s
+ * Samsung 8GB PRO  - 4MB/s
+ * Transend 8GB 400x HC-i 42.2MB/s
  
 * Copy the OS image to the SD card:
 ```
