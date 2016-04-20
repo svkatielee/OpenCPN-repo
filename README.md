@@ -46,7 +46,7 @@ Optionally choose a different display resolution.
 Connect to the Internet, currently LAN works fine, some WiFi dongles, but not mine.
 <br />The following resulted in 81.7MB downlod as of Apr 18, 2016:
 <br /><code>
-sudo apt-get update
+sudo apt-get update<br>
 sudo apt-get upgrade
 </code>
 
@@ -61,7 +61,7 @@ sudo service sshd restart ; sudo service sshd status
 <br />
 Currently, USB memory devices are not automounted so:
 <br /><code>
-sudo apt-get install gvfs policykit-1 policykit-1-gnome eject
+sudo apt-get install gvfs policykit-1 policykit-1-gnome eject<br>
 sudo mkdir -p /etc/polkit-1/localauthority/50-local.d/
 </code>
 <br />and create these two files there:
