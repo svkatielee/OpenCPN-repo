@@ -3,6 +3,13 @@ the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 
 The selected OS is **armbian**, Linux for ARM development boards, from (http://www.armbian.com).
 
+!! UPDATE !!!bJun, 2016
+Added new updated package:
+Revisions:  = opencpn_4.4.0-1_armhf.deb
+ * Armbian_5.14_Orangepipc_Debian_jessie_3.4.112_desktop.raw
+ * OpenCPN 4.4.0 (VERSION_DATE "2016-06-13")
+ * Orange PI PC v1.2 (purchased Feb, 2016)
+
 Revisions:
  * Armbian_5.05_Orangepih3_Debian_jessie_3.4.110_desktop
  * OpenCPN 4.2.0.1 (VERSION_DATE "2016-02-03")
@@ -37,53 +44,13 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-* If you plan to use ssh,  as root add this line to the end of `/etc/ssh/sshd.conf`
-```
-Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
-```
-
-Now restart sshd:
-```
-sudo service sshd restart ; sudo service sshd status
-```
-
-* Currently, USB memory devices are not automounted so to partially fix it:
-```
-sudo apt-get install gvfs policykit-1 policykit-1-gnome eject
-sudo mkdir -p /etc/polkit-1/localauthority/50-local.d/
-```
-and create these two files there:
-
-`plugdev.pkla`
-```
-[Allow Automount]
-Identity=unix-group:plugdev
-Action=org.freedesktop.udisks2.filesystem-mount;org.freedesktop.udisks2.filesystem-mount-system;org.freedeskt
-op.udisks2.filesystem-mount-other-seat;org.freedesktop.udisks2.filesystem-unmount-others;org.freedesktop.udis
-ks2.eject-media;org.freedesktop.udisks2.eject-media-system;org.freedesktop.udisks2.power-off-drive*
-ResultAny=yes
-ResultInactive=yes
-ResultActive=yes
-```
-`power.pkla`
-```
-[Allow Desktopstuff]
-Identity=unix-group:sudo
-Action=org.freedesktop.login1.reboot;org.freedesktop.login1.reboot-multiple-session;org.freedesktop.login1.po
-wer-off;org.freedesktop.login1.power-off-multiple-sessions;org.freedesktop.login1.suspend;org.freedesktop.log
-in1.suspend-multiple-sessions;org.freedesktop.login1.hibernate;org.freedesktop.login1.hibernate-multiple-sess
-ions
-ResultAny=yes
-ResultInactive=yes
-ResultActive=yes
-```
 * Install the prerequisites for OpenCPN:
 ```
-sudo apt-get install libportaudio2 libtinyxml2.6.2 libwxbase3.0-0 libwxgtk3.0-0 wx3.0-i18n libwxbase3.0-0 libwxgtk3.0-0 wx3.0-i18n libtinyxml2.6.2 libportaudio2
+sudo apt-get install libportaudio2 libtinyxml2.6.2 libwxbase3.0-0 libwxgtk3.0-0 wx3.0-i18n libwxbase3.0-0 libwxgtk3.0-0 wx3.0-i18n libtinyxml2.6.2 libportaudio2 wx3.0-i18n
 ```
 
 * And finally download OpenCPN package and install with:
 ```
-sudo dpkg -i opencpn_4.2.0-1_armhf.deb
+sudo dpkg -i opencpn_4.4.0-1_armhf.deb
 ```
 
