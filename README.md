@@ -3,6 +3,16 @@ the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 
 The selected OS is **armbian**, Linux for ARM development boards, from (http://www.armbian.com).
 
+**!! UPDATE !!!**  Feb 20, 2018
+added update package:
+    opencpn_4.8.2-1_min_armhf.deb
+    min = no DOCs, no tcdata, maps=CRUDE
+    
+Compliing instructions are at:
+    https://kb7kmo.blogspot.tw/2018/02/compile-opencpn-482-for-armbian.html
+
+
+
 !! UPDATE !!!bJun, 2016
 Added new updated package:
 Revisions:  = opencpn_4.4.0-1_armhf.deb
