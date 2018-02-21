@@ -1,11 +1,11 @@
-This is a repository for debian packages for installing OpenCPN Chart plotting software on
-the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
+This is a repository for Debian or Ubuntu style packages for installing OpenCPN Chart plotting software on
+arm SBCs running Armbian such as the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 
 The selected OS is **armbian**, Linux for ARM development boards, from (http://www.armbian.com).
 
 **!! UPDATE !!!**  Feb 20, 2018
 
-I added update package:
+I added update package compiled in armbian 5.38 Ubuntu 16.04 :
  * opencpn_4.8.2-1_min_armhf.deb
    * min = no DOCs, no tcdata, maps=CRUDE
  * opencpn_4.8.2_armhf.def
