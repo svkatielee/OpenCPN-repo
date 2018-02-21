@@ -4,16 +4,22 @@ the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 The selected OS is **armbian**, Linux for ARM development boards, from (http://www.armbian.com).
 
 **!! UPDATE !!!**  Feb 20, 2018
-added update package:
-    opencpn_4.8.2-1_min_armhf.deb
-    min = no DOCs, no tcdata, maps=CRUDE
+
+I added update package:
+ * opencpn_4.8.2-1_min_armhf.deb
+   * min = no DOCs, no tcdata, maps=CRUDE
+ * opencpn_4.8.2_armhf.def
+   * = no DOCs, default tcdata, maps=LOW res
+ * tcdata/*
+   * tide data with stations throughout Asia
+
     
 Compliing instructions are at:
     https://kb7kmo.blogspot.tw/2018/02/compile-opencpn-482-for-armbian.html
 
 
 
-!! UPDATE !!!bJun, 2016
+!! UPDATE !!! Jun, 2016
 Added new updated package:
 Revisions:  = opencpn_4.4.0-1_armhf.deb
  * Armbian_5.14_Orangepipc_Debian_jessie_3.4.112_desktop.raw
@@ -63,4 +69,7 @@ sudo apt-get install libportaudio2 libtinyxml2.6.2 libwxbase3.0-0 libwxgtk3.0-0 
 ```
 sudo dpkg -i opencpn_4.4.0-1_armhf.deb
 ```
-
+* You can also copy the tcdata/* files to a space on yout system and point to them in opencpn 
+...
+Tools->Options->Charts->Tides & Currents->Add Dataset
+...
