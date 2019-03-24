@@ -1,3 +1,7 @@
+
+**!! Obsolete as of 4.8.8 and 5.0.0 !!** 
+armhf and arm64 packages are maintained in Debian/Ubuntu PPA - Mar24, 2019
+
 This is a repository for Debian or Ubuntu style packages for installing OpenCPN Chart plotting software on
 arm SBCs running Armbian such as the Orange Pi PC or equivalent Allwinner H3 ARM SoC based Development boards.
 
